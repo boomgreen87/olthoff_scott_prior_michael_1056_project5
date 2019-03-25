@@ -18,7 +18,7 @@ p
 /*Formats Page*/
 #container
 {
-	width: 960px;
+	max-width: 960px;
 	margin: 0 auto;
 }
 
@@ -119,7 +119,7 @@ p
 #aboutUsCopy1
 {
 	width: 600px;
-	height: 305px;
+	height: 295px;
 	margin: 0 10px 0 15px;
 	background-color: #CCC;
 }
