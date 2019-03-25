@@ -1,0 +1,244 @@
+@charset "utf-8";
+/*CSS document*/
+
+.hidden
+{
+	display: none;
+}
+
+/*Formats Page*/
+#container
+{
+	width: 960px;
+	margin: 0 auto;
+}
+
+/*Makes Header relative so logo can be positioned over header image and nav*/
+#mainHeader
+{
+	position: relative;
+}
+
+/*Styles Header Image*/
+#headerImage
+{
+	height: 160px;
+	background-color: #333;
+}
+
+/*Styles Main Nav*/
+#mainNav
+{
+	height: 40px;
+	background-color: #666;
+}
+
+/*Styles Logo, positions it over header image and nav*/
+#logo
+{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	width: 200px;
+	height: 200px;
+	background-color: #999;
+}
+
+/*Styles Meetings Banner*/
+#meetings
+{
+	height: 50px;
+	background-color: #666;
+	margin-top: 30px;
+}
+
+/*Positions Hero Image and makes it relative so copy can be placed over it*/
+#heroImage
+{
+	position: relative;
+	margin-top: 30px;
+}
+
+/*Styles hero image*/
+#heroImageBG
+{
+	height: 350px;
+	background-color: #333;
+}
+
+/*Styles Hero Image Copy, positions it over hero image*/
+#heroImageCopy
+{
+	position: absolute;
+	top: 80px;
+	left: 180px;
+	width: 600px;
+	height: 190px;
+	background-color: #CCC;
+}
+
+/*Positions About Us*/
+#aboutUs
+{
+	margin-top: 30px;
+}
+
+/*Styles About Us Title*/
+#aboutUsTitle
+{
+	width: 930px;
+	height: 50px;
+	margin: 0 15px 15px 15px;
+	background-color: #666;
+}
+
+/*Makes About Us Info a flex item so that children display in a column*/
+#aboutUsInfo
+{
+	display: flex;
+	flex-direction: column;
+}
+
+/*Makes About Us Info Top a flex item so that children display in a row*/
+#aboutUsInfoTop
+{
+	display: flex;
+	flex-direction: row;
+}
+
+/*Styles About Us Copy 1*/
+#aboutUsCopy1
+{
+	width: 600px;
+	height: 305px;
+	margin: 0 10px 0 15px;
+	background-color: #CCC;
+}
+
+/*Styles About Us Image*/
+#aboutUsImage
+{
+	width: 320px;
+	height: 305px;
+	margin-right: 15px;
+	background-color: #333;
+}
+
+/*Styles About Us Copy 2*/
+#aboutUsCopy2
+{
+	width: 930px;
+	height: 260px;
+	margin: 27px 0 0 15px;
+	background-color: #CCC
+}
+
+/*Styles about Us Executives Title*/
+#aboutUsExecutivesTitle
+{
+	width: 930px;
+	height: 40px;
+	margin: 23px 15px 15px 15px;
+	background-color: #666;
+}
+
+/*Positions About Us Executives and makes it a flex item so children are displayed in a row with equal space between them to the
+ edges of the container*/
+#aboutUsExecutives
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 930px;
+	margin-left: 15px;
+}
+
+/*Styles Executives Copy*/
+.executivesCopy
+{
+	width: 174px;
+	height: 45px;
+	background-color: #CCC;
+}
+
+/*Styles About Us Volunteers Title*/
+#aboutUsVolunteersTitle
+{
+	width: 930px;
+	height: 40px;
+	margin: 25px 15px 15px 15px;
+	background-color: #666;
+}
+
+/*Positions About Us Volunteers and makes it a flex item so children are displayed in a row with equal space between them to the
+ edges of the container*/
+#aboutUsVolunteers
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 930px;
+	margin-left: 15px;
+}
+
+/*Styles Volunteers Copy*/
+.volunteersCopy
+{
+	width: 174px;
+	height: 100px;
+	background-color: #CCC;
+}
+
+/*Styles Memberships and makes it a flex item so children are centered vertically*/
+#memberships
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 40px 0px 50px 0;
+	height: 130px;
+	background-color: #666;
+	padding: 25px;
+}
+
+/*Makes Memberships Content a flex item so the children are pushed horizontally to the edges of the container*/
+#membershipsCon
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+/*Syles Memberships Title*/
+#membershipsTitle
+{
+	margin-top: 5px;
+	width: 380px;
+	height: 95px;
+	background-color: #CCC
+}
+
+/*Makes Memberships Right a flex item so children are displayed in a column*/
+#membershipsRight
+{
+	display: flex;
+	flex-direction: column;
+}
+
+/*Styles Memberships Copy*/
+#membershipsCopy
+{
+	width: 505px;
+	height: 75px;
+	background-color: #CCC;
+}
+
+/*Styles Memberships Button*/
+#membershipsButton
+{
+	width: 505px;
+	height: 30px;
+	margin-top: 5px;
+	background-color: #000;
+	border-radius: 5px;
+}
