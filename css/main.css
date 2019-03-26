@@ -1,6 +1,7 @@
 @charset "utf-8";
 /*CSS document*/
 
+/*Global Rules*/
 p
 {
 	font-family: Arial, sans-serif;
@@ -15,10 +16,16 @@ p
 	display: none;
 }
 
+/*Mobile Layout - 320 px Width - No media query needed*/
+
 /*Formats Page*/
+body{
+	margin:0 auto;
+	width:100%;
+}
 #container
 {
-	max-width: 960px;
+	width: 80%;
 	margin: 0 auto;
 }
 
@@ -31,25 +38,24 @@ p
 /*Styles Header Image*/
 #headerImage
 {
-	height: 160px;
+	height: 80px;
 	background-color: #333;
 }
 
 /*Styles Main Nav*/
 #mainNav
 {
-	height: 40px;
+	height: 25px;
+	margin-top:5px;
 	background-color: #666;
 }
 
 /*Styles Logo, positions it over header image and nav*/
-#logo
+#small-logo
 {
-	position: absolute;
-	top: 15px;
-	left: 15px;
-	width: 200px;
-	height: 200px;
+	margin:0 auto;
+	width: 110px;
+	height: 80px;
 	background-color: #999;
 }
 
@@ -58,20 +64,22 @@ p
 {
 	height: 50px;
 	background-color: #666;
-	margin-top: 30px;
+	margin-top: 10px;
 }
 
 /*Positions Hero Image and makes it relative so copy can be placed over it*/
 #heroImage
 {
 	position: relative;
-	margin-top: 30px;
+	margin-top: 20px;
 }
 
 /*Styles hero image*/
 #heroImageBG
 {
-	height: 350px;
+	margin:0 auto;
+	width:90%;
+	height: 250px;
 	background-color: #333;
 }
 
@@ -79,10 +87,10 @@ p
 #heroImageCopy
 {
 	position: absolute;
-	top: 80px;
-	left: 180px;
-	width: 600px;
-	height: 190px;
+	right:50px;
+	left:50px;
+	bottom:15px;
+	height: 120px;
 	background-color: #CCC;
 }
 
@@ -95,9 +103,9 @@ p
 /*Styles About Us Title*/
 #aboutUsTitle
 {
-	width: 930px;
+	width:100%;
 	height: 50px;
-	margin: 0 15px 15px 15px;
+	margin: 0 0px 10px 0px;
 	background-color: #666;
 }
 
@@ -113,42 +121,47 @@ p
 {
 	display: flex;
 	flex-direction: row;
+	margin:0 auto;
+	width:90%;
 }
 
 /*Styles About Us Copy 1*/
 #aboutUsCopy1
 {
-	width: 600px;
-	height: 295px;
-	margin: 0 10px 0 15px;
+	width:45%;
+	height: 150px;
+	margin-right:75px;
+	/*margin: 0 10px 0 15px;*/
 	background-color: #CCC;
 }
 
 /*Styles About Us Image*/
 #aboutUsImage
 {
-	width: 320px;
-	height: 305px;
-	margin-right: 15px;
+	width:45%;
 	background-color: #333;
 }
 
 /*Styles About Us Copy 2*/
 #aboutUsCopy2
 {
-	width: 930px;
-	height: 260px;
-	margin: 27px 0 0 15px;
+	margin:0 auto;
+	width: 90%;
+	height: 130px;
+	margin-top:15px;
+	/*margin: 27px 0 0 15px;*/
 	background-color: #CCC
 }
 
 /*Styles about Us Executives Title*/
 #aboutUsExecutivesTitle
 {
-	width: 930px;
-	height: 40px;
-	margin: 23px 15px 15px 15px;
-	background-color: #666;
+	width: 100%;
+	height: 50px;
+	margin-top: 15px;
+	margin-bottom:15px;
+/*	margin: 23px 15px 15px 15px;
+*/	background-color: #666;
 }
 
 /*Positions About Us Executives and makes it a flex item so children are displayed in a row with equal space between them to the
@@ -156,27 +169,28 @@ p
 #aboutUsExecutives
 {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	width: 930px;
-	margin-left: 15px;
+	flex-wrap: wrap;
 }
 
 /*Styles Executives Copy*/
 .executivesCopy
 {
-	width: 174px;
-	height: 45px;
+	margin:0 auto;
+	margin-bottom:5px;
+	width: 100px;
+	height: 75px;
 	background-color: #CCC;
 }
 
 /*Styles About Us Volunteers Title*/
 #aboutUsVolunteersTitle
 {
-	width: 930px;
-	height: 40px;
-	margin: 25px 15px 15px 15px;
-	background-color: #666;
+	width: 100%;
+	height: 50px;
+	margin-top: 15px;
+	margin-bottom:15px;
+/*	margin: 23px 15px 15px 15px;
+*/	background-color: #666;
 }
 
 /*Positions About Us Volunteers and makes it a flex item so children are displayed in a row with equal space between them to the
@@ -184,46 +198,44 @@ p
 #aboutUsVolunteers
 {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	width: 930px;
-	margin-left: 15px;
+	flex-wrap: wrap;
 }
 
 /*Styles Volunteers Copy*/
 .volunteersCopy
 {
-	width: 174px;
-	height: 100px;
+	margin:0 auto;
+	margin-bottom:5px;
+	width: 100px;
+	height: 75px;
 	background-color: #CCC;
 }
 
 /*Styles Memberships and makes it a flex item so children are centered vertically*/
 #memberships
 {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin: 40px 0px 50px 0;
-	height: 130px;
+	display: block;
+	margin: 15px 0px 15px 0;
 	background-color: #666;
-	padding: 25px;
+	width:100%;
 }
 
 /*Makes Memberships Content a flex item so the children are pushed horizontally to the edges of the container*/
 #membershipsCon
 {
-	display: flex;
+	display: block;
+	/*display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-between;*/
+	width:100%;
+	margin: 0 auto;
 }
 
 /*Syles Memberships Title*/
 #membershipsTitle
 {
-	margin-top: 5px;
-	width: 380px;
-	height: 95px;
+	width:100%;
+	height: 50px;
 	background-color: #CCC
 }
 
@@ -237,17 +249,266 @@ p
 /*Styles Memberships Copy*/
 #membershipsCopy
 {
-	width: 505px;
-	height: 75px;
+	width: 90%;
+	margin: 0 auto;
+	margin-top:15px;
+	height: 100px;
 	background-color: #CCC;
 }
 
 /*Styles Memberships Button*/
 #membershipsButton
 {
-	width: 505px;
-	height: 30px;
-	margin-top: 5px;
+	width: 40%;
+	height: 50px;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	background-color: #000;
 	border-radius: 5px;
+}
+
+
+/*Desktop Layout - 600px Width*/
+@media only screen and (min-width:780px){
+	body
+	{
+	margin:0 auto;
+	max-width:960px;
+	}
+	/*Formats Page*/
+	#container
+	{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	/*Makes Header relative so logo can be positioned over header image and nav*/
+	#mainHeader
+	{
+		position: relative;
+	}
+
+	/*Styles Header Image*/
+	#headerImage
+	{
+		height: 160px;
+		background-color: #333;
+	}
+
+	/*Styles Main Nav*/
+	#mainNav
+	{
+		height: 40px;
+		background-color: #666;
+	}
+	
+	#small-logo{display:none;}
+	/*Styles Logo, positions it over header image and nav*/
+	#logo
+	{
+		position: absolute;
+		top: 15px;
+		left: 15px;
+		width: 200px;
+		height: 200px;
+		background-color: #999;
+	}
+
+	/*Styles Meetings Banner*/
+	#meetings
+	{
+		height: 50px;
+		background-color: #666;
+		margin-top: 30px;
+	}
+
+	/*Positions Hero Image and makes it relative so copy can be placed over it*/
+	#heroImage
+	{
+		position: relative;
+		margin-top: 30px;
+	}
+
+	/*Styles hero image*/
+	#heroImageBG
+	{
+		height: 350px;
+		background-color: #333;
+	}
+
+	/*Styles Hero Image Copy, positions it over hero image*/
+	#heroImageCopy
+	{
+		position: absolute;
+	right:95px;
+	left:95px;
+	bottom:15px;
+	height: 120px;
+	background-color: #CCC;
+	}
+
+	/*Positions About Us*/
+	#aboutUs
+	{
+		width:100%;
+		margin-top: 30px;
+	}
+
+	/*Styles About Us Title*/
+	#aboutUsTitle
+	{
+		width: 100%;
+		height: 50px;
+		margin: 0 0px 15px 0;
+		background-color: #666;
+	}
+
+	/*Makes About Us Info a flex item so that children display in a column*/
+	#aboutUsInfo
+	{
+		display: flex;
+		flex-direction: column;
+		margin:0 auto;
+	}
+
+	/*Makes About Us Info Top a flex item so that children display in a row*/
+	#aboutUsInfoTop
+	{
+		display: flex;
+		flex-direction: row;
+	}
+
+	/*Styles About Us Copy 1*/
+	#aboutUsCopy1
+	{
+		width: 70%;
+		height: 305px;
+		background-color: #CCC;
+	}
+
+	/*Styles About Us Image*/
+	#aboutUsImage
+	{
+		left:0px;
+		width: 320px;
+		background-color: #333;
+	}
+
+	/*Styles About Us Copy 2*/
+	#aboutUsCopy2
+	{
+		height: 260px;
+		background-color: #CCC
+	}
+
+	/*Styles about Us Executives Title*/
+	#aboutUsExecutivesTitle
+	{
+		width: 100%;
+		height: 40px;
+		margin: 23px 0 15px 0;
+		background-color: #666;
+	}
+
+	/*Positions About Us Executives and makes it a flex item so children are displayed in a row with equal space between them to the
+	 edges of the container*/
+	#aboutUsExecutives
+	{
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		margin:0 auto;
+	}
+
+	/*Styles Executives Copy*/
+	.executivesCopy
+	{
+		width: 15%;
+		height: 100px;
+		background-color: #CCC;
+	}
+
+	/*Styles About Us Volunteers Title*/
+	#aboutUsVolunteersTitle
+	{
+		width: 100%;
+		height: 40px;
+		margin: 25px 0 15px 0;
+		background-color: #666;
+	}
+
+	/*Positions About Us Volunteers and makes it a flex item so children are displayed in a row with equal space between them to the
+	 edges of the container*/
+	#aboutUsVolunteers
+	{
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		margin:0 auto;
+	}
+
+	/*Styles Volunteers Copy*/
+	.volunteersCopy
+	{
+		width: 15%;
+		height: 100px;
+		background-color: #CCC;
+	}
+
+	/*Styles Memberships and makes it a flex item so children are centered vertically*/
+	#memberships
+	{
+		display: flex;
+		flex-direction: column;
+		margin: 40px 0px 50px 0;
+		height: 130px;
+		background-color: #666;
+		width:100%;
+	}
+
+	/*Makes Memberships Content a flex item so the children are pushed horizontally to the edges of the container*/
+	#membershipsCon
+	{
+		display: flex;
+		flex-direction: row;
+	}
+
+	/*Syles Memberships Title*/
+	#membershipsTitle
+	{
+		margin-top:15px;
+		margin-left:20px;
+		width: 40%;
+		height: 105px;
+		background-color: #CCC
+	}
+
+	/*Makes Memberships Right a flex item so children are displayed in a column*/
+	#membershipsRight
+	{
+		width:60%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	/*Styles Memberships Copy*/
+	#membershipsCopy
+	{
+		width: 90%;
+		height: 70px;
+		background-color: #CCC;
+		margin-right:20px;
+	}
+
+	/*Styles Memberships Button*/
+	#membershipsButton
+	{
+		width: 90%;
+		margin-right:20px;
+		height: 30px;
+		margin-top: 5px;
+		background-color: #000;
+		border-radius: 5px;
+	}
 }
