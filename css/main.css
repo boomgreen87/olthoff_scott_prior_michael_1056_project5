@@ -1,6 +1,15 @@
 @charset "utf-8";
 /*CSS document*/
 
+p
+{
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	padding-top: 10px;
+}
+
 .hidden
 {
 	display: none;
@@ -9,7 +18,7 @@
 /*Formats Page*/
 #container
 {
-	width: 960px;
+	max-width: 960px;
 	margin: 0 auto;
 }
 
@@ -110,7 +119,7 @@
 #aboutUsCopy1
 {
 	width: 600px;
-	height: 305px;
+	height: 295px;
 	margin: 0 10px 0 15px;
 	background-color: #CCC;
 }
